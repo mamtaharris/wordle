@@ -23,7 +23,7 @@ I : \+ <br />
 L : \- <br />
 L : \- <br /> 
 S : \- <br />    
-The letter I is in the word but in the wrong spot. <br />
+The letter I is in the word but in the wrong spot.<br />
 <br />
 Vague<br />
 V : \- <br />
@@ -31,4 +31,6 @@ A : \- <br />
 G : \- <br />
 U : \- <br />
 E : \- <br />
-None of the letters are in the word in any spot. <br />
+None of the letters are in the word in any spot.<br />
+
+<img width="667" alt="Screenshot 2022-02-09 at 10 40 51 AM" src="https://user-images.githubusercontent.com/21972478/153126259-f81d6608-a3c5-4aa8-ac6e-5c6c0ebe51e0.png">
