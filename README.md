@@ -9,14 +9,26 @@ After each guess, you will know how close your guess was to the word by watching
 Inspired by https://www.powerlanguage.co.uk/wordle/
 ### Examples:
 
-W E A R Y <br />
-\* \- \- \- \- <br />
+Weary <br />
+W : \* <br /> 
+E : \- <br /> 
+A : \- <br /> 
+R : \- <br /> 
+Y : \- <br />
 The letter W is in the word and in the correct spot.<br />
 <br />
-P I L L S <br />
-\- \+ \- \- \- <br />    
+Pills<br />
+P : \- <br />
+I : \+ <br />
+L : \- <br />
+L : \- <br /> 
+S : \- <br />    
 The letter I is in the word but in the wrong spot. <br />
 <br />
-V A G U E <br />
-\- \- \- \- \- <br />
+Vague<br />
+V : \- <br />
+A : \- <br />
+G : \- <br />
+U : \- <br />
+E : \- <br />
 None of the letters are in the word in any spot. <br />
