@@ -19,3 +19,5 @@ The letter I is in the word but in the wrong spot. <br />
 V A G U E <br />
 \- \- \- \- \- <br />
 None of the letters are in the word in any spot. <br />
+<br />
+Inspired by <a href="https://www.powerlanguage.co.uk/wordle/">
