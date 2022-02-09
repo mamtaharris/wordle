@@ -9,7 +9,6 @@ def load_words():
 if __name__ == '__main__':
     english_words = load_words()
     word_to_guess = random.choice(list(english_words))
-    print(word_to_guess)
     count = 0 
 
 
@@ -36,3 +35,5 @@ if __name__ == '__main__':
             else:
                 print(guess[letter].capitalize(), ": - ")
         print("")
+    
+    print("The word was: " + word_to_guess)
