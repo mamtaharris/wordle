@@ -10,33 +10,33 @@ Inspired by https://www.powerlanguage.co.uk/wordle/
 ### Examples:
 
 Weary <br />
-{
+{ <br />
   alphabet_0 : 2 <br /> 
   alphabet_1 : 0 <br /> 
   alphabet_2 : 0 <br /> 
   alphabet_3 : 0 <br /> 
   alphabet_4 : 0 <br />
-}
+} <br />
 The letter W is in the word and in the correct spot.<br />
 <br />
 Pills<br />
-{
+{ <br />
   alphabet_0 : 0 <br /> 
   alphabet_1 : 1 <br /> 
   alphabet_2 : 0 <br /> 
   alphabet_3 : 0 <br /> 
   alphabet_4 : 0 <br />
-}
+} <br />
 The letter I is in the word but in the wrong spot.<br />
 <br />
 Vague<br />
-{
+{ <br />
   alphabet_0 : 0 <br /> 
   alphabet_1 : 0 <br /> 
   alphabet_2 : 0 <br /> 
   alphabet_3 : 0 <br /> 
   alphabet_4 : 0 <br />
-}
+} <br />
 None of the letters are in the word in any spot.<br />
 
 CMD v1 screenshot:
