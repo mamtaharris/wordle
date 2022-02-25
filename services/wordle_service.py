@@ -1,9 +1,6 @@
 import json
 import random
-from flask import Flask
-from models.wordle_request import *
-from models.wordle_response import *
-from flask import Flask, request, jsonify, make_response
+from flask import jsonify, make_response
 
 def load_words():
     with open('services/five_letter_words.json') as json_file:
@@ -12,27 +9,23 @@ def load_words():
 def wordle_logic(reqBody):
     english_words = load_words()
     word_to_guess = random.choice(list(english_words))
-    response = [] 
+    response = {}
 
-    guess = WordleReqBody(reqBody).word
+    guess = reqBody['word']
     guess = str(guess).strip()
     if len(guess) != 5:
-        return make_response("Please enter a 5 letter word.", 400)
+        return make_response(jsonify({'error': 'guess must be 5 letters long'}), 400)
     if guess not in english_words:
-        return make_response("Sorry, that's not a word.", 400)
+        return make_response(jsonify({'error': "sorry, that's not a word"}), 400)
     
     for letter in range(0, len(guess)):
+        alphabet_numbered = 'alphabet_' + str(letter)
         if guess[letter] == word_to_guess[letter]:
-            list.append(response, WordleRespBody(guess[letter], 2))
+            response[alphabet_numbered] = 2
         elif guess[letter] in word_to_guess:
-            list.append(response, WordleRespBody(guess[letter], 1))
+            response[alphabet_numbered] = 1
         else:
-            list.append(response, WordleRespBody(guess[letter], 0))
+            response[alphabet_numbered] = 0
     
-    wordleRespList = []
-    for wordleRespBody in response:
-      wordleRespList.append(wordleRespBody)
-    return jsonify(wordleRespList)
-
-    # return(list)
+    return make_response(response, 200)
      

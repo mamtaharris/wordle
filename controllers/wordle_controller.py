@@ -1,16 +1,15 @@
 from services.wordle_service import wordle_logic
-from models.wordle_request import *
-from models.error_response import *
-from flask import Flask, request, jsonify, make_response
+from flask import  request, jsonify, make_response
 
 
 from flask import request
 
 def wordle_handler():
-    json = request.get_json()
-    
-    return make_response( jsonify(wordle_logic(WordleReqBody(json))), 200)
+    reqBody = request.get_json()
+    if 'word' not in reqBody:
+        return make_response(jsonify({'error': 'missing word in request'}), 400)
+    return wordle_logic(reqBody)
 
 def hello():
-    return "Hello World!"
+    return "Hello, Welcome to my Wordle"
 
